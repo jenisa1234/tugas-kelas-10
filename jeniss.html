@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penilaian Siswa</title>
+    <script>
+        // Nama: [Nama Anda]
+        // Kelas: [Kelas Anda]
+
+        function cekKelulusan() {
+            // Mengambil nilai dari input
+            var nilai = parseInt(document.getElementById("nilai").value);
+            var tidakHadir = parseInt(document.getElementById("tidakHadir").value);
+
+            // Memeriksa kondisi kelulusan
+            if (nilai < 75 && tidakHadir > 5) {
+                alert("Anda tidak lulus");
+            } else {
+                alert("Anda Lulus");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Program Penilaian Siswa</h1>
+    <label for="nilai">Masukkan Nilai:</label>
+    <input type="number" id="nilai" required>
+    <br>
+    <label for="tidakHadir">Masukkan Jumlah Tidak Hadir:</label>
+    <input type="number" id="tidakHadir" required>
+    <br>
+    <button onclick="cekKelulusan()">Cek Kelulusan</button>
+</body>
+</html>

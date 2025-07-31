@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Cookies</title>
+    <style>
+        body {
+            font-family: sans-serif; /* A common default font */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light grey background */
+        }
+
+        .container {
+            width: 80%; /* Adjust as needed */
+            max-width: 960px; /* Maximum width for larger screens */
+            margin: 20px auto; /* Center the content with some top/bottom margin */
+            background-color: #fff; /* White background for the main content area */
+            border-radius: 8px; /* Slightly rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            overflow: hidden; /* To contain floated elements or rounded corners */
+        }
+
+        .top-section {
+            background-color: #e0cba9; /* Light brownish background */
+            padding: 20px;
+            text-align: center; /* Center the "FOR BITTE" text */
+        }
+
+        .top-section h2 {
+            color: #5e3a21; /* Dark brown text */
+            margin-bottom: 10px;
+        }
+
+        .hero {
+            display: flex; /* Arrange image and text side by side */
+            align-items: center; /* Vertically align items in the center */
+            padding: 20px;
+        }
+
+        .hero-image {
+            flex: 1; /* Takes up available space */
+            
+        }
+
+        .hero-image img {
+            width: 100%; /* Make the image responsive within its container */
+            border-radius: 6px; /* Slightly rounded image corners */
+        }
+
+        .hero-text {
+            flex: 1; /* Takes up available space */
+            padding-left: 20px; /* Space between image and text */
+            text-align: left;
+        }
+
+        .hero-text h1 {
+            color: #8c5b38; /* Another shade of brown */
+            margin-bottom: 5px;
+        }
+
+        .hero-text p {
+            color: #5e3a21;
+            margin-bottom: 15px;
+        }
+
+        .best-seller-section {
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9; /* Light greyish background for this section */
+        }
+
+        .best-seller-section h2 {
+            color: #5e3a21;
+            margin-bottom: 15px;
+        }
+
+        .product-grid {
+            display: grid; /* Use grid layout for the product images */
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
+            gap: 10px; /* Spacing between grid items */
+            margin-top: 15px;
+        }
+
+        .product-grid img {
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .menu-lainnya-button {
+            display: inline-block;
+            background-color: #d4a373; /* Another brownish color */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .menu-lainnya-button:hover {
+            background-color: #b88655; /* Darker shade on hover */
+        }
+
+        .footer {
+            background-color: #f0e6d2; /* Light beige background */
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            text-align: left;
+            color: #5e3a21;
+        }
+
+        .footer-column h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-column a {
+            text-decoration: none;
+            color: #5e3a21;
+        }
+
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-section">
+            <h2>FOR BITTE</h2>
+        </div>
+        <div class="hero">
+            <div class="hero-image">
+                <img src="menuUtama.jpg" alt="Sweet Cookies" width="800" height="300">
+            </div>
+        </div>
+        <div class="best-seller-section">
+            <h2>Best Seller</h2>
+            <div class="product-grid">
+                <img src="kukis11.jpg" alt="Cookie 1">
+                <img src="kukis22.jpg" alt="Cookie 2">
+                <img src="kukis3.jpg" alt="Cookie 3">
+                <img src="kukis4.jpg" alt="Cookie 4">
+                <img src="kukis5.jpeg" alt="Cookie 5">
+                <img src="kukis6.jpeg" alt="Cookie 6">
+            </div>
+            <a href="#" class="menu-lainnya-button">Menu Lainnya</a>
+        </div>
+        <div class="footer">
+            <div class="footer-column">
+                <h3>Kelompok 9</h3>
+                <ul>
+                    <li><a href="#">Aulia</a></li>
+                    <li><a href="#">Gazlan</a></li>
+                    <li><a href="#">Jenisa</a></li>
+                    <li><a href="#">Finsa</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Bantuan</h3>
+                <ul>
+                    <li><a href="#">Status Pesanan</a></li>
+                    <li><a href="#">Pengiriman</a></li>
+                    <li><a href="#">Opsi Pembayaran</a></li>
+                    <li><a href="#">Hubungi Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Masuk / Daftar</h3>
+                <ul>
+                    <li><a href="#">Masuk</a></li>
+                    <li><a href="#">Daftar</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
